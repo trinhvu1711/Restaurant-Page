@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+      @apply font-body text-white
+  }
+}
+
+
+@layer components {
+  .header {
+    color: #fd79a8;
+  }
+  
+  .banner {
+    color: black;
+    .swiper {
+      height: 70vh;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  }
+
+  .about-content {
+    .swiper {
+      margin: 20px auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+    .swiper-wrapper {
+      max-height: 250px;
+      max-width: 250px;
+    }
+    .swiper-slide{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        display: block;
+        max-height: 250px;
+        max-width: 250px;
+        object-fit: cover;
+      }
+    }
+  }
+  
+  
+}
