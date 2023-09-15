@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom'
-import Header from './Header'
+import Footer from './Footer'
+import Header from './header'
 
 
 const Main = () => {
@@ -7,6 +8,7 @@ const Main = () => {
     <>
       <Header></Header>
       <Outlet></Outlet>
+      <Footer></Footer>
     </>
   )
 }

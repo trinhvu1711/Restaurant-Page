@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-      @apply font-body text-white
+      @apply font-body text-white bg-white
   }
 }
 
@@ -29,26 +29,19 @@
 
   .about-content {
     .swiper {
-      margin: 20px auto;
+      // margin: 20px auto;
       max-height: 100%;
       max-width: 100%;
     }
-    .swiper-wrapper {
-      max-height: 250px;
-      max-width: 250px;
-    }
+
     .swiper-slide{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      max-width: 250px;
+      max-height: 250px;
       img {
         display: block;
-        max-height: 250px;
-        max-width: 250px;
         object-fit: cover;
       }
     }
   }
-  
   
 }
